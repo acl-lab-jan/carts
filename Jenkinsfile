@@ -58,7 +58,7 @@ pipeline {
         }
       }
     }
-    stage('Run health check in dev') {
+    stage('Run health check in development') {
       when {
         expression {
           return env.BRANCH_NAME ==~ 'release/.*' || env.BRANCH_NAME ==~'master'
